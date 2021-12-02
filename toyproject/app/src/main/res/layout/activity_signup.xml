@@ -65,7 +65,7 @@
         android:id="@+id/name_signup_layout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="36dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         app:boxStrokeColor="#aeb4c2"
@@ -76,7 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="내용을 입력하시오"
-            android:textSize="15sp"
+            android:textSize="12sp"
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
