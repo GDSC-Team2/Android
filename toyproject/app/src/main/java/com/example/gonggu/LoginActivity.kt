@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
     private var mBinding: ActivityLoginBinding? = null
     private val binding get() = mBinding!!
 
-    var googleSignInClient : GoogleSignInClient? = null
+    lateinit var googleSignInClient : GoogleSignInClient
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,41 +35,65 @@ class LoginActivity : AppCompatActivity() {
             .requestIdToken("572171105595-nemm1l1kuqo023fq5b5053n55322qa3i.apps.googleusercontent.com")
             .requestEmail()
             .build()
+
         googleSignInClient = GoogleSignIn.getClient(this,gso)
 
         binding.loginBtn.setOnClickListener {
             googleLogin()
-            Toast.makeText(this, "성공", Toast.LENGTH_LONG).show()
+//            Toast.makeText(this, "성공", Toast.LENGTH_LONG).show()
+
+//            val gsa = GoogleSignIn.getLastSignedInAccount(this@LoginActivity)
+
+            // 로그인 되있는 경우 (토큰으로 로그인 처리)
+//            if (gsa != null && gsa.id != null) {
+//                startActivity(Intent(this, MainActivity::class.java))
+//                finish()
+//            }
         }
 
     }
 
     private fun googleLogin() {
-        var signInIntent: Intent = googleSignInClient!!.getSignInIntent()
+        val signInIntent = googleSignInClient!!.signInIntent
         startActivityForResult(signInIntent, RC_SIGN_IN)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        // Result returned from launching the Intent from GoogleSignInClient.getSignInIntent(...);
         if (requestCode == RC_SIGN_IN) {
-            // The Task returned from this call is always completed, no need to attach
-            // a listener.
-            val task: Task<GoogleSignInAccount> = GoogleSignIn.getSignedInAccountFromIntent(data)
+            val task =
+                GoogleSignIn.getSignedInAccountFromIntent(data)
             handleSignInResult(task)
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
         }
+
+        // Result returned from launching the Intent from GoogleSignInClient.getSignInIntent(...);
+//        if (requestCode == RC_SIGN_IN) {
+//            // The Task returned from this call is always completed, no need to attach
+//            // a listener.
+//            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+//            handleSignInResult(task)
+//            startActivity(Intent(this, MainActivity::class.java))
+//            finish()
+//        }
     }
 
     private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
         try {
-            val account = completedTask.getResult(ApiException::class.java)
-            val email = account?.email.toString()
-            val familyName = account?.familyName.toString()
-            val givenName = account?.givenName.toString()
-            val displayName = account?.displayName.toString()
+            val account : GoogleSignInAccount = completedTask.getResult(ApiException::class.java)
+
+            if (account != null) {
+                val email = account?.email.toString()
+                val familyName = account?.familyName.toString()
+                val givenName = account?.givenName.toString()
+                val displayName = account?.displayName.toString()
+
+                Log.d("*******success*******", email)
+                Log.d("*******success*******", familyName)
+                Log.d("*******success*******", givenName)
+                Log.d("*******success*******", displayName)
+            }
+
         } catch (e: ApiException) {
             // The ApiException status code indicates the detailed failure reason.
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
