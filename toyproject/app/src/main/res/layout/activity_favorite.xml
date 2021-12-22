@@ -14,13 +14,13 @@
         android:orientation="vertical"
         android:layout_marginTop="32dp">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:textStyle="normal"
             android:textSize="24sp"
             android:textColor="#000000"
-            tools:text="내가 참여중인\n공구리숙트"/>
+            android:text="내가 참여중인\n공구리숙트"/>
 
         <!--참여중인 공구-->
         <LinearLayout
@@ -29,14 +29,14 @@
             android:layout_marginTop="32dp"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="참여중인 공구"
-            android:textSize="16sp"
-            android:textColor="#5a6684"
-            android:layout_marginRight="4dp"
-            android:fontFamily="sans-serif"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="참여중인 공구"
+                android:textSize="16sp"
+                android:textColor="#5a6684"
+                android:layout_marginRight="4dp"
+                android:fontFamily="sans-serif"/>
             <View
                 android:layout_width="203dp"
                 android:layout_height="1dp"
