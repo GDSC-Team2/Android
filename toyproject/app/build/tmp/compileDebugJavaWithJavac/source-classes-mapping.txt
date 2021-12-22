@@ -1,0 +1,18 @@
+com/example/gonggu/databinding/FragmentDetailPostViewBinding.java
+ com.example.gonggu.databinding.FragmentDetailPostViewBinding
+com/example/gonggu/databinding/ActivitySignupBinding.java
+ com.example.gonggu.databinding.ActivitySignupBinding
+com/example/gonggu/BuildConfig.java
+ com.example.gonggu.BuildConfig
+com/example/gonggu/databinding/ActivityMainBinding.java
+ com.example.gonggu.databinding.ActivityMainBinding
+com/example/gonggu/databinding/ActivityFavoriteBinding.java
+ com.example.gonggu.databinding.ActivityFavoriteBinding
+com/example/gonggu/databinding/MainItemsBinding.java
+ com.example.gonggu.databinding.MainItemsBinding
+com/example/gonggu/databinding/ActivityLoginBinding.java
+ com.example.gonggu.databinding.ActivityLoginBinding
+com/example/gonggu/databinding/ActivityMypageBinding.java
+ com.example.gonggu.databinding.ActivityMypageBinding
+com/example/gonggu/databinding/FragmentAddPostBinding.java
+ com.example.gonggu.databinding.FragmentAddPostBinding

@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_detail_post_view.xml",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\fragment_detail_post_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add_post.xml",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\fragment_add_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_signup.xml",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_favorite.xml",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\activity_favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_mypage.xml",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\activity_mypage.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\main_items.xml",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\main_items.xml"
+    }
+]

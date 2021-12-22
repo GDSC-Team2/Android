@@ -1,0 +1,254 @@
+[
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_calendar.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_calendar.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_noonsong.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\noonsong.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_post_rounded_blue.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\post_rounded_blue.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_add_post.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\fragment_add_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_rounded_gray.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\rounded_gray.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\layout_main_items.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\main_items.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_roundborderline.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\roundborderline.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_write_day.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_write_day.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_home_24.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_baseline_home_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_link.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_link.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_favorite.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\activity_favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_red_badge.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\red_badge.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_mypage.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\activity_mypage.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_messenger.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_messenger.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_img_logo.jpg.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable-v24\\img_logo.jpg"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_detail_post_view.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\fragment_detail_post_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_member.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_member.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_email_24.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_baseline_email_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_back_arrow.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable-v24\\ic_back_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_price.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_price.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_product.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_product.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_edittext_title_style.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\edittext_title_style.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_post_rounded_gray.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable-v24\\post_rounded_gray.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_blue_badge.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\blue_badge.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_gray_badge.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\gray_badge.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_arrow_back_24.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_baseline_arrow_back_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_navigation_menu.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\menu\\bottom_navigation_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_like.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_like.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_post_writer.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_post_writer.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_unlike.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_unlike.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_unselect_heart.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_unselect_heart.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_borderline.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\borderline.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_roundborderline.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable-v24\\roundborderline.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_add_circle_outline_24.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_baseline_add_circle_outline_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_edittext_write_content_layout.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\edittext_write_content_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_favorite_24.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\ic_baseline_favorite_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_edittext_layout.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\edittext_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\build\\intermediates\\merged_res\\debug\\drawable_rounded_blue.xml.flat",
+        "source": "C:\\Users\\khapp\\Desktop\\2021-toypj\\Android\\toyproject\\app\\src\\main\\res\\drawable\\rounded_blue.xml"
+    }
+]
