@@ -40,9 +40,6 @@ class LoginActivity : AppCompatActivity() {
 
         binding.loginBtn.setOnClickListener {
             googleLogin()
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
-
         }
 
     }
@@ -77,6 +74,9 @@ class LoginActivity : AppCompatActivity() {
                 Log.d("*******success*******", familyName)
                 Log.d("*******success*******", givenName)
                 Log.d("*******success*******", displayName)
+
+                startActivity(Intent(this, MainActivity::class.java))
+                finish()
             }
 
         } catch (e: ApiException) {
