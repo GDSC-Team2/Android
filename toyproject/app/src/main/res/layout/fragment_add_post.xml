@@ -29,6 +29,7 @@
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:layout_marginLeft="28dp"
+                android:layout_centerVertical="true"
                 android:src="@drawable/ic_back_arrow" />
 
             <TextView
@@ -41,6 +42,19 @@
                 android:textColor="#404040"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/create_goggu"
+                android:layout_width="48dp"
+                android:layout_height="19dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="297dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/blue_badge"
+                android:text="등록"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold" />
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
@@ -49,7 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,6 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -96,38 +111,6 @@
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@id/linearLayout2"
             tools:layout_editor_absoluteX="0dp">
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="83dp"
-                android:layout_height="36dp"
-                android:background="@drawable/post_rounded_blue"
-                android:gravity="center"
-                android:text="공구 물품"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/et_product"
-                android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:layout_marginLeft="12dp"
-                android:background="@drawable/post_rounded_gray"
-                android:hint="내용을 입력하세요."
-                android:paddingLeft="8dp"
-                android:textSize="12sp"
-                android:layout_marginBottom="3dp"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/Linearlayout_price"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/Linearlayout_product"
-            tools:layout_editor_absoluteX="0dp">
-
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="83dp"
@@ -149,15 +132,16 @@
                 android:paddingLeft="8dp"
                 android:textSize="12sp"
                 android:layout_marginBottom="3dp"/>
+
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/Linearlayout_startdate"
+            android:id="@+id/Linearlayout_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/Linearlayout_price"
+            app:layout_constraintTop_toBottomOf="@+id/Linearlayout_product"
             tools:layout_editor_absoluteX="0dp">
 
             <TextView
@@ -171,12 +155,12 @@
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/et_start_day"
+                android:id="@+id/et_date"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:layout_marginLeft="12dp"
                 android:background="@drawable/post_rounded_gray"
-                android:hint="YYYY / MM / DD"
+                android:hint="YYYY / MM / DD ~ YYYY / MM / DD"
                 android:inputType="date"
                 android:paddingLeft="8dp"
                 android:textSize="12sp"
@@ -184,45 +168,68 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/Linearlayout_enddate"
+            android:id="@+id/Linearlayout_startdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/Linearlayout_startdate"
+            app:layout_constraintTop_toBottomOf="@+id/Linearlayout_price"
             tools:layout_editor_absoluteX="0dp">
+
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="83dp"
                 android:layout_height="36dp"
-                android:background="#00ff0000"
+                android:background="@drawable/post_rounded_blue"
                 android:gravity="center"
+                android:text="상품 링크"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/et_end_day"
+                android:id="@+id/et_link"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:layout_marginLeft="12dp"
                 android:background="@drawable/post_rounded_gray"
-                android:hint="~ YYYY / MM / DD"
+                android:hint="https://search.shopping.naver..."
                 android:inputType="date"
                 android:paddingLeft="8dp"
                 android:textSize="12sp"
                 android:layout_marginBottom="10dp"/>
         </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/Linearlayout_enddate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/Linearlayout_startdate"
+            tools:layout_editor_absoluteX="0dp">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="83dp"
+                android:layout_height="36dp"
+                android:background="@drawable/post_rounded_blue"
+                android:gravity="center"
+                android:text="오픈 채팅"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigationbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_navigation_menu"/>
+            <EditText
+                android:id="@+id/et_openchatlink"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/post_rounded_gray"
+                android:hint="https://open.kakao.com/o/team2"
+                android:paddingLeft="8dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="3dp"/>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
