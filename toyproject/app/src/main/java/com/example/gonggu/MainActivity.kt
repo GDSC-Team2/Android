@@ -14,7 +14,7 @@ class MainActivity: AppCompatActivity(), BottomNavigationView.OnNavigationItemSe
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        
+
         //bottom navigation
         bottom_navigationbar.setOnNavigationItemSelectedListener(this)
         //set default screen

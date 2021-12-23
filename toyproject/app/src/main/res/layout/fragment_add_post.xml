@@ -156,7 +156,6 @@
                 android:layout_marginBottom="3dp"
                 android:background="@drawable/post_rounded_gray"
                 android:hint="YYYY / MM / DD ~ YYYY / MM / DD"
-                android:inputType="date"
                 android:paddingLeft="8dp"
                 android:textSize="12sp" />
         </LinearLayout>
