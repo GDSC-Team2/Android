@@ -3,6 +3,7 @@ package com.example.gonggu
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.gonggu.recyclerview.MainItem
@@ -14,6 +15,12 @@ class MainActivity: AppCompatActivity(), BottomNavigationView.OnNavigationItemSe
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        var data = intent.getStringExtra("emailKey")
+        Log.d("*****성공 success*****", "value:" + data)
+
+        var bundle = Bundle()
+        bundle.putString("email", "")
 
         //bottom navigation
         bottom_navigationbar.setOnNavigationItemSelectedListener(this)
