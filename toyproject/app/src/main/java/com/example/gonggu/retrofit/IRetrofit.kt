@@ -11,6 +11,8 @@ import com.example.gonggu.model.readDTO
 import com.example.gonggu.model.writeDTO
 import com.example.gonggu.utils.API.POST_USERS
 import com.example.gonggu.utils.API.SEARCH_USERS
+import com.example.gonggu.model.readDTO
+import com.example.gonggu.model.writeDTO
 import retrofit2.http.*
 
 
