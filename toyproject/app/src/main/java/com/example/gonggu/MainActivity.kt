@@ -19,14 +19,17 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity: AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
+    var MainDetailFragment = MainDetailFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var data: String?
-        data = intent.getStringExtra("name")
+        var data = intent.getStringExtra("emailKey")
         Log.d("*****성공 success*****", "value:" + data)
+
+        var bundle = Bundle()
+        bundle.putString("email", "")
 
         //bottom navigation
         bottom_navigationbar.setOnNavigationItemSelectedListener(this)
@@ -38,7 +41,6 @@ class MainActivity: AppCompatActivity(), BottomNavigationView.OnNavigationItemSe
     override fun onNavigationItemSelected(p0: MenuItem): Boolean {
         when(p0.itemId){
             R.id.action_home->{
-                var MainDetailFragment = MainDetailFragment()
                 supportFragmentManager.beginTransaction().replace(R.id.main_content,MainDetailFragment).commit()
                 return true
             }

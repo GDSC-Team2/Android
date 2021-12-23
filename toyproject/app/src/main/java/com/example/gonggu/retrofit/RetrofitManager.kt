@@ -47,16 +47,18 @@ class RetrofitManager {
 
 
     //글등록
-    fun write(title: String, description: String, link: String, contact: String, date: String){
-        var call = httpCall?.write(title,description,link,contact,date)
+    fun write(writeDTO: writeDTO){
+        var call = httpCall?.write(writeDTO)
         call?.enqueue(object : retrofit2.Callback<writeDTO>{
             override fun onResponse(call: Call<writeDTO>, response: Response<writeDTO>) {
                 Log.d(TAG, "RetrofitManager - getTodo() - onResponse() called / response: $response")
                 Log.d(TAG, "response.body : ${response.body()}")
+                Log.d("success", "성공성공")
             }
 
             override fun onFailure(call: Call<writeDTO>, t: Throwable) {
                 Log.d(TAG, "RetrofitManager - getTodo() - onFailure() called / t: ${t}")
+                Log.d("fail", "실패실패")
             }
         })
     }

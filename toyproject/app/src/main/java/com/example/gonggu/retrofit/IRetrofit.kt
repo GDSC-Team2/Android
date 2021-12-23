@@ -25,14 +25,12 @@ interface IRetrofit {
     @GET(SEARCH_USERS)
     fun getUser(@Query("query") searchTerm: String) : Call<JsonElement>
 
+    @Headers("Content-Type: application/json")
     @POST("/api/v1/posts")
     fun write(
-        @Body writeDTO: String,
-        description: String,
-        link: String,
-        contact: String,
-        date: String
-    ) : retrofit2.Call<writeDTO>
+        @Body
+        writeDTO: writeDTO
+    ) : Call<writeDTO>
 
     @GET("/api/v1/posts/{id}")
     fun read(@Path(value="id",encoded=true) id:Int) : retrofit2.Call<readDTO>
