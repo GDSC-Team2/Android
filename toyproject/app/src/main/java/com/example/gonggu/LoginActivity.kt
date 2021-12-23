@@ -40,15 +40,6 @@ class LoginActivity : AppCompatActivity() {
 
         binding.loginBtn.setOnClickListener {
             googleLogin()
-//            Toast.makeText(this, "성공", Toast.LENGTH_LONG).show()
-
-//            val gsa = GoogleSignIn.getLastSignedInAccount(this@LoginActivity)
-
-            // 로그인 되있는 경우 (토큰으로 로그인 처리)
-//            if (gsa != null && gsa.id != null) {
-//                startActivity(Intent(this, MainActivity::class.java))
-//                finish()
-//            }
         }
 
     }
@@ -66,16 +57,6 @@ class LoginActivity : AppCompatActivity() {
                 GoogleSignIn.getSignedInAccountFromIntent(data)
             handleSignInResult(task)
         }
-
-        // Result returned from launching the Intent from GoogleSignInClient.getSignInIntent(...);
-//        if (requestCode == RC_SIGN_IN) {
-//            // The Task returned from this call is always completed, no need to attach
-//            // a listener.
-//            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
-//            handleSignInResult(task)
-//            startActivity(Intent(this, MainActivity::class.java))
-//            finish()
-//        }
     }
 
     private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
