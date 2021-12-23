@@ -43,7 +43,6 @@ class MypageFragment : Fragment() {
             mGoogleSignInClient.signOut()
             startActivity(Intent(activity, LoginActivity::class.java))
         }
-
         
         return binding.root
     }
