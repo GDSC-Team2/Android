@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         var gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken("572171105595-nemm1l1kuqo023fq5b5053n55322qa3i.apps.googleusercontent.com")
+            .requestIdToken("572171105595-3aiu6ju9amf6bdjd1pmcatbljlidinjv.apps.googleusercontent.com")
             .requestEmail()
             .build()
 
@@ -40,15 +40,6 @@ class LoginActivity : AppCompatActivity() {
 
         binding.loginBtn.setOnClickListener {
             googleLogin()
-//            Toast.makeText(this, "성공", Toast.LENGTH_LONG).show()
-
-//            val gsa = GoogleSignIn.getLastSignedInAccount(this@LoginActivity)
-
-            // 로그인 되있는 경우 (토큰으로 로그인 처리)
-//            if (gsa != null && gsa.id != null) {
-//                startActivity(Intent(this, MainActivity::class.java))
-//                finish()
-//            }
         }
 
     }
@@ -65,17 +56,8 @@ class LoginActivity : AppCompatActivity() {
             val task =
                 GoogleSignIn.getSignedInAccountFromIntent(data)
             handleSignInResult(task)
-        }
 
-        // Result returned from launching the Intent from GoogleSignInClient.getSignInIntent(...);
-//        if (requestCode == RC_SIGN_IN) {
-//            // The Task returned from this call is always completed, no need to attach
-//            // a listener.
-//            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
-//            handleSignInResult(task)
-//            startActivity(Intent(this, MainActivity::class.java))
-//            finish()
-//        }
+        }
     }
 
     private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
@@ -92,6 +74,9 @@ class LoginActivity : AppCompatActivity() {
                 Log.d("*******success*******", familyName)
                 Log.d("*******success*******", givenName)
                 Log.d("*******success*******", displayName)
+
+                startActivity(Intent(this, MainActivity::class.java))
+                finish()
             }
 
         } catch (e: ApiException) {
