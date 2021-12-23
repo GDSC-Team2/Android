@@ -26,6 +26,8 @@ class LoginActivity : AppCompatActivity() {
 
     final val RC_SIGN_IN = 1
 
+    var displayName : String = ""
+
     private var mBinding: ActivityLoginBinding? = null
     private val binding get() = mBinding!!
 
@@ -71,19 +73,20 @@ class LoginActivity : AppCompatActivity() {
 
             if (account != null) {
                 val email = account?.email.toString()
-                val displayName = account?.displayName.toString()
+                displayName = account?.displayName.toString()
                 val photo = account?.photoUrl.toString()
 
                 Log.d("*****성공 success*****", email)
                 Log.d("*****성공 success*****", displayName)
                 Log.d("*****성공 success*****", photo)
 
+                // addUseres API 호출
                 val user = userDTO(email, displayName, photo)
-
-
-
                 RetrofitManager.instance.addUsers(user)
 
+                // 사용자 이름 넘기기
+                val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                intent.putExtra("name", displayName)
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
