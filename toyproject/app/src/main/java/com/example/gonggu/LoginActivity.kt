@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         var gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken("572171105595-nemm1l1kuqo023fq5b5053n55322qa3i.apps.googleusercontent.com")
+            .requestIdToken("572171105595-3aiu6ju9amf6bdjd1pmcatbljlidinjv.apps.googleusercontent.com")
             .requestEmail()
             .build()
 

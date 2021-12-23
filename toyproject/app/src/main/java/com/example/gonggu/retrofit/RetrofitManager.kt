@@ -1,8 +1,15 @@
 package com.example.gonggu.retrofit
 
-<<<<<<< HEAD
 import com.example.gonggu.utils.API
 import retrofit2.create
+import android.util.Log
+import com.example.gonggu.model.readDTO
+import com.example.gonggu.model.writeDTO
+import com.example.gonggu.utils.API.BASE_URL
+import com.example.gonggu.utils.Constants.TAG
+import retrofit2.Call
+import retrofit2.Response
+
 
 class RetrofitManager {
 
@@ -11,7 +18,7 @@ class RetrofitManager {
     }
 
     // 레트로핏 인터페이스 가져오기
-    private val iRetrofit : IRetrofit? = RetrofitClient.getClient(API.BASE_URL)?.create(IRetrofit::class.java)
+    private val iRetrofit : IRetrofit? = RetrofitClient.getClient(BASE_URL)?.create(IRetrofit::class.java)
 
     // 유저 검색 api 호출
     fun searchUser(searchTerm: String?, completion: (String) -> Unit) {
@@ -23,20 +30,6 @@ class RetrofitManager {
         }?: return
     }
 
-=======
-import android.util.Log
-import com.example.gonggu.model.readDTO
-import com.example.gonggu.model.writeDTO
-import com.example.gonggu.utils.API.Companion.BASE_URL
-import retrofit2.Call
-import retrofit2.Response
-
-class RetrofitManager {
-    val TAG : String = "로그"
-
-    companion object{
-        val instance = RetrofitManager()
-    }
 
     private val httpCall : IRetrofit? = RetrofitClient.getClient(BASE_URL)?.create(IRetrofit::class.java)
 
@@ -69,5 +62,4 @@ class RetrofitManager {
             }
         })
     }
->>>>>>> fc0b6ad4142eba054cd3ccbf9871f11ef3b0e1b1
 }
