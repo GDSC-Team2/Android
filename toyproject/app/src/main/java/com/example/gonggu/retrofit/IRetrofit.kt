@@ -9,14 +9,19 @@ import retrofit2.http.POST
 import retrofit2.http.Query
 import com.example.gonggu.model.readDTO
 import com.example.gonggu.model.writeDTO
+import com.example.gonggu.utils.API.POST_USERS
 import com.example.gonggu.utils.API.SEARCH_USERS
 import retrofit2.http.*
 
 
 interface IRetrofit {
 
-    @POST(SEARCH_USERS)
-    fun addUser() : Call<userDTO>
+    @Headers("Content-Type: application/json")
+    @POST(POST_USERS)
+    fun addUsers(
+        @Body
+        userDTO: userDTO
+    ) : Call<userDTO>
 
     @GET(SEARCH_USERS)
     fun getUser(@Query("query") searchTerm: String) : Call<JsonElement>
