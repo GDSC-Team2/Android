@@ -1,17 +1,5 @@
 package com.example.gonggu.retrofit
 
-<<<<<<< Updated upstream
-import com.example.gonggu.utils.API
-import retrofit2.create
-import android.util.Log
-import com.example.gonggu.model.readDTO
-import com.example.gonggu.model.writeDTO
-import com.example.gonggu.utils.API.BASE_URL
-import com.example.gonggu.utils.Constants.TAG
-import retrofit2.Call
-import retrofit2.Response
-
-=======
 import android.util.Log
 import com.example.gonggu.model.readAllDTO
 import com.example.gonggu.model.readDTO
@@ -19,7 +7,6 @@ import com.example.gonggu.model.writeDTO
 import com.example.gonggu.utils.API
 import retrofit2.Call
 import retrofit2.Response
->>>>>>> Stashed changes
 
 class RetrofitManager {
     val TAG : String = "로그"
@@ -29,12 +16,8 @@ class RetrofitManager {
     }
 
     // 레트로핏 인터페이스 가져오기
-<<<<<<< Updated upstream
-    private val iRetrofit : IRetrofit? = RetrofitClient.getClient(BASE_URL)?.create(IRetrofit::class.java)
-=======
     private val iRetrofit : IRetrofit? = RetrofitClient.getClient(API.BASE_URL)?.create(IRetrofit::class.java)
     private val httpCall : IRetrofit? = RetrofitClient.getClient(API.BASE_URL)?.create(IRetrofit::class.java)
->>>>>>> Stashed changes
 
     // 유저 검색 api 호출
     fun searchUser(searchTerm: String?, completion: (String) -> Unit) {
@@ -46,11 +29,6 @@ class RetrofitManager {
         }?: return
     }
 
-<<<<<<< Updated upstream
-
-    private val httpCall : IRetrofit? = RetrofitClient.getClient(BASE_URL)?.create(IRetrofit::class.java)
-=======
->>>>>>> Stashed changes
 
     //글등록
     fun write(writeDTO: writeDTO){
@@ -85,8 +63,4 @@ class RetrofitManager {
             }
         })
     }
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes

@@ -7,34 +7,18 @@ import com.example.gonggu.model.writeDTO
 import com.example.gonggu.utils.API
 import com.google.gson.JsonElement
 import retrofit2.Call
-<<<<<<< Updated upstream
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.Query
-import com.example.gonggu.model.readDTO
-import com.example.gonggu.model.writeDTO
-import com.example.gonggu.utils.API.SEARCH_USERS
-import com.example.gonggu.model.readDTO
-import com.example.gonggu.model.writeDTO
 import retrofit2.http.*
-
-=======
-import retrofit2.http.*
->>>>>>> Stashed changes
 
 interface IRetrofit {
 
-    @POST(SEARCH_USERS)
+    @POST(API.SEARCH_USERS)
     fun addUser() : Call<userDTO>
 
-    @GET(SEARCH_USERS)
+    @GET(API.SEARCH_USERS)
     fun getUser(@Query("query") searchTerm: String) : Call<JsonElement>
 
-<<<<<<< Updated upstream
-=======
     //글등록
     @Headers("Content-Type: application/json")
->>>>>>> Stashed changes
     @POST("/api/v1/posts")
     fun write(
         @Body
@@ -56,10 +40,5 @@ interface IRetrofit {
 
     @DELETE("/api/v1/posts/{id}")
     fun delete(@Path(value="id",encoded=true) id:Int): retrofit2.Call<Void>
-<<<<<<< Updated upstream
-}
-=======
 
 }
-
->>>>>>> Stashed changes
