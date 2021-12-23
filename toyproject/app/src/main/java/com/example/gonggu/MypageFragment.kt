@@ -30,7 +30,7 @@ class MypageFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         mBinding= ActivityMypageBinding.inflate(inflater, container, false)
-        
+
         var gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestEmail()
             .build()

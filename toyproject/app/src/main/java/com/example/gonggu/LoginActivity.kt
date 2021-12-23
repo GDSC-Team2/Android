@@ -85,6 +85,8 @@ class LoginActivity : AppCompatActivity() {
                 // 사용자 이메일 넘기기
                 val intent = Intent(this@LoginActivity, MainActivity::class.java)
                 intent.putExtra("emailKey", email)
+                intent.putExtra("nameKey", displayName)
+                intent.putExtra("photoKey", photo)
                 startActivity(intent)
                 finish()
             }
