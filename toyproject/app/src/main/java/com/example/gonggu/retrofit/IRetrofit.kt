@@ -1,7 +1,6 @@
 package com.example.gonggu.retrofit
 
 import com.example.gonggu.DTOs.userDTO
-import com.example.gonggu.utils.API
 import com.google.gson.JsonElement
 import retrofit2.Call
 import retrofit2.http.GET
@@ -11,8 +10,6 @@ import com.example.gonggu.model.readDTO
 import com.example.gonggu.model.writeDTO
 import com.example.gonggu.utils.API.POST_USERS
 import com.example.gonggu.utils.API.SEARCH_USERS
-import com.example.gonggu.model.readDTO
-import com.example.gonggu.model.writeDTO
 import retrofit2.http.*
 
 

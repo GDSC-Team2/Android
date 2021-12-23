@@ -1,16 +1,12 @@
 package com.example.gonggu.retrofit
 
-import com.example.gonggu.utils.API
-import retrofit2.create
 import android.util.Log
 import com.example.gonggu.DTOs.userDTO
 import com.example.gonggu.model.readDTO
 import com.example.gonggu.model.writeDTO
 import com.example.gonggu.utils.API.BASE_URL
 import com.example.gonggu.utils.Constants.TAG
-import com.example.gonggu.utils.RESPONSE_STATE
 import retrofit2.Call
-import retrofit2.Callback
 import retrofit2.Response
 
 
