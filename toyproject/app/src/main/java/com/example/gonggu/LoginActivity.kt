@@ -40,6 +40,9 @@ class LoginActivity : AppCompatActivity() {
 
         binding.loginBtn.setOnClickListener {
             googleLogin()
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+
         }
 
     }
@@ -56,6 +59,7 @@ class LoginActivity : AppCompatActivity() {
             val task =
                 GoogleSignIn.getSignedInAccountFromIntent(data)
             handleSignInResult(task)
+
         }
     }
 
