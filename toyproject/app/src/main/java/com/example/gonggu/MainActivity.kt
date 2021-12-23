@@ -19,17 +19,26 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity: AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
-    var MainDetailFragment = MainDetailFragment()
+    var MypageFragment = MypageFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var data = intent.getStringExtra("emailKey")
-        Log.d("*****성공 success*****", "value:" + data)
+        // LoginActivity에서 값 받아오기
+        val email = intent.getStringExtra("emailKey").toString()
+        val name = intent.getStringExtra("nameKey").toString()
+        val photo = intent.getStringExtra("photoKey").toString()
+
+        Log.d("*****성공 Main~*****", email)
+        Log.d("*****성공 Main~*****", name)
+        Log.d("*****성공 Main~*****", photo)
 
         var bundle = Bundle()
-        bundle.putString("email", "")
+        bundle.putString("emailKey", email)
+        bundle.putString("nameKey", name)
+        bundle.putString("photoKey", photo)
+        MypageFragment.arguments = bundle
 
         //bottom navigation
         bottom_navigationbar.setOnNavigationItemSelectedListener(this)
@@ -41,6 +50,7 @@ class MainActivity: AppCompatActivity(), BottomNavigationView.OnNavigationItemSe
     override fun onNavigationItemSelected(p0: MenuItem): Boolean {
         when(p0.itemId){
             R.id.action_home->{
+                var MainDetailFragment = MainDetailFragment()
                 supportFragmentManager.beginTransaction().replace(R.id.main_content,MainDetailFragment).commit()
                 return true
             }
@@ -55,7 +65,6 @@ class MainActivity: AppCompatActivity(), BottomNavigationView.OnNavigationItemSe
                 return true
             }
             R.id.action_mypage->{
-                var MypageFragment = MypageFragment()
                 supportFragmentManager.beginTransaction().replace(R.id.main_content,MypageFragment).commit()
                 return true
             }
