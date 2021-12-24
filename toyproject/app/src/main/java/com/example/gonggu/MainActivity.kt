@@ -15,6 +15,7 @@ class MainActivity: AppCompatActivity(), BottomNavigationView.OnNavigationItemSe
 
     var MypageFragment = MypageFragment()
     var bundle = Bundle()
+    var bundle2=Bundle()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +34,12 @@ class MainActivity: AppCompatActivity(), BottomNavigationView.OnNavigationItemSe
         bundle.putString("nameKey", name)
         bundle.putString("photoKey", photo)
 
+        //user name
+        var myname=intent.getStringExtra("nameKey")
+
+
+        bundle2.putString("author",myname)
+
         //bottom navigation
         bottom_navigationbar.setOnNavigationItemSelectedListener(this)
         //set default screen
@@ -45,16 +52,19 @@ class MainActivity: AppCompatActivity(), BottomNavigationView.OnNavigationItemSe
         when(p0.itemId){
             R.id.action_home->{
                 var MainDetailFragment = MainDetailFragment()
+                MainDetailFragment.arguments=bundle2
                 supportFragmentManager.beginTransaction().replace(R.id.main_content,MainDetailFragment).commit()
                 return true
             }
             R.id.action_favorite->{
                 var favoriteFragment = FavoriteFragment()
+                favoriteFragment.arguments=bundle2
                 supportFragmentManager.beginTransaction().replace(R.id.main_content,favoriteFragment).commit()
                 return true
             }
             R.id.action_add->{
                 var AddFragment = AddFragment()
+                AddFragment.arguments=bundle2
                 supportFragmentManager.beginTransaction().replace(R.id.main_content,AddFragment).commit()
                 return true
             }

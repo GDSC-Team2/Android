@@ -10,17 +10,16 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.gonggu.DetailPostView
 import com.example.gonggu.R
-import com.example.gonggu.model.readAllDTO
 
-class MainItemAdapter(val MainItemList:ArrayList<MainItem>) : RecyclerView.Adapter<MainItemAdapter.CustomViewHolder>(){
+class MyItemAdapter(val MainItemList:ArrayList<MainItem>) : RecyclerView.Adapter<MyItemAdapter.CustomViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) : CustomViewHolder{
-        val view=LayoutInflater.from(parent.context).inflate(R.layout.main_items,parent,false)
+        val view= LayoutInflater.from(parent.context).inflate(R.layout.main_items,parent,false)
         return CustomViewHolder(view).apply {
             itemView.setOnClickListener {
                 val curPos:Int=adapterPosition
                 val mainitem:MainItem=MainItemList.get(curPos)
-                Toast.makeText(parent.context,"제목 : ${mainitem.title}",Toast.LENGTH_SHORT).show()
+                Toast.makeText(parent.context,"제목 : ${mainitem.title}", Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -35,13 +34,13 @@ class MainItemAdapter(val MainItemList:ArrayList<MainItem>) : RecyclerView.Adapt
 
         //해당 recyclerview 클릭시 activity 화면 이동
         holder.itemView.setOnClickListener {
-            var intent=Intent(holder.itemView?.context,DetailPostView::class.java)
+            var intent= Intent(holder.itemView?.context, DetailPostView::class.java)
             intent.putExtra("id_extra",position)
-            holder.itemView?.context.startActivity(intent)
+            ContextCompat.startActivity(holder.itemView.context,intent,null)
         }
     }
 
-    class CustomViewHolder(itemView: View):RecyclerView.ViewHolder(itemView) {
+    class CustomViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         var title=itemView.findViewById<TextView>(R.id.tv_title) //글제목
         var author=itemView.findViewById<TextView>(R.id.tv_id) //글쓴이
         var link=itemView.findViewById<TextView>(R.id.tv_item_titlename) //공구링크

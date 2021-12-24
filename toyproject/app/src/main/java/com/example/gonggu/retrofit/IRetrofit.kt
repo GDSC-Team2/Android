@@ -1,6 +1,7 @@
 package com.example.gonggu.retrofit
 
 import com.example.gonggu.DTOs.userDTO
+import com.example.gonggu.model.MyWritingDTO
 import com.example.gonggu.model.readAllDTO
 import com.example.gonggu.model.readDTO
 import com.example.gonggu.model.writeDTO
@@ -35,14 +36,21 @@ interface IRetrofit {
 
     //글 세부 조회
     @GET("/api/v1/posts/{id}")
-    fun read(@Path(value="id",encoded=true) id:Int) : Call<readDTO>
+    fun read(@Query("id") id:Int) : Call<readDTO>
 
+    //글수정
     @PUT("/api/v1/posts/{id}")
     fun modify(
         @Path(value="id",encoded=true) id:Int,
-        @Body writeDTO: writeDTO) : retrofit2.Call<writeDTO>
+        @Body writeDTO: writeDTO) : Call<writeDTO>
 
+    //글삭제
     @DELETE("/api/v1/posts/{id}")
-    fun delete(@Path(value="id",encoded=true) id:Int): retrofit2.Call<Void>
+    fun delete(@Path(value="id",encoded=true) id:Int): Call<Void>
+
+    //내가 쓴 글 전체 조회 (수정해야함 api 주소)
+    @GET("/api/v1/posts/my/{author}")
+    fun MyWriting(@Query("author") author:String) : Call<List<MyWritingDTO>>
+
 
 }
