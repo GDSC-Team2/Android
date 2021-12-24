@@ -20,14 +20,15 @@ class DetailPostView : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
 
-        var id_extra=intent.getIntExtra("id_extra",0)
+        intent = getIntent();// 인텐트 받아오기
+        var id_extra = intent.getIntExtra("id_extra",10); //Adapter에서 받은 키값 연결
 
         //세부 글 읽기
-        var call = httpCall?.read(id=id_extra)
+        var call = httpCall?.read(id_extra)
         call?.enqueue(object : retrofit2.Callback<readDTO>{
             override fun onResponse(call: Call<readDTO>, response: Response<readDTO>) {
                 Log.d(TAG, "RetrofitManager - getTodo() - onResponse() called / response: $response")
-                Log.d(TAG, "response.body : ${response.body()}")
+                Log.d(TAG, "response.body : ${id_extra}")
 
                 //id값 매칭
                 var title=findViewById<TextView>(R.id.tv_post_title) //글제목
