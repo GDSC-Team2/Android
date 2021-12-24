@@ -83,7 +83,6 @@ class MainDetailFragment : Fragment(){
  */
                 mBinding!!.rvItems.layoutManager= LinearLayoutManager(activity)
                 mBinding!!.rvItems.setHasFixedSize(true)
-
                 mBinding!!.rvItems.adapter= MainItemAdapter(MainItemList)
             }
 
