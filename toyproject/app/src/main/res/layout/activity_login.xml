@@ -15,7 +15,7 @@
         android:id="@+id/logo_img"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
         android:src="@drawable/img_logo" />
 
         <TextView
@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="80dp"
             android:text="공구리숙트"
             android:textStyle="bold"
             android:textColor="@color/black"
@@ -45,6 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="100dp"
         android:text="슥명 구글 이메일만 사용 가능합니다."/>
 
 
