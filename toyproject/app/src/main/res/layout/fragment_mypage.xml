@@ -52,8 +52,9 @@
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/iv_user_profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_gravity="center"
         android:layout_marginTop="58dp"
         android:src="@drawable/noonsong"/>
@@ -71,13 +72,13 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
         <ImageView
             android:id="@+id/image1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
             android:src="@drawable/ic_baseline_email_24" />
 
         <TextView
@@ -89,12 +90,7 @@
             android:text="noonsong@sookmyung.ac.kr"
             android:textColor="#36383d"
             android:textSize="14sp" />
-
-
-
     </RelativeLayout>
-
-
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/my_upload_history_btn"

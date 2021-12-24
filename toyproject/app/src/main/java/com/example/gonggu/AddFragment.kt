@@ -33,6 +33,14 @@ class AddFragment : Fragment(){
             var date=binding.etDate.text.toString()
             var price=binding.etPrice.text.toString()
             RetrofitManager.instance.write(writeDTO(title, description, link, contact, price, date, author))
+
+            //등록 후 공백으로 바꾸기
+            binding.etWriteTitle.setText("")
+            binding.etWriteContent.setText("")
+            binding.etLink.setText("")
+            binding.etOpenchatlink.setText("")
+            binding.etDate.setText("")
+            binding.etPrice.setText("")
         }
 
         return binding.root
