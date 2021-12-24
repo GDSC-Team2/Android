@@ -47,7 +47,6 @@ class LoginActivity : AppCompatActivity() {
         binding.loginBtn.setOnClickListener {
             googleLogin()
         }
-
     }
 
     private fun googleLogin() {
@@ -89,6 +88,7 @@ class LoginActivity : AppCompatActivity() {
                 intent.putExtra("photoKey", photo)
                 startActivity(intent)
                 finish()
+
             }
 
         } catch (e: ApiException) {

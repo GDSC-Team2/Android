@@ -30,13 +30,13 @@ class MyDetailPostView: AppCompatActivity() {
     private val binding get() = mBinding!!
 
     //id값 매칭
-    var title=findViewById<TextView>(R.id.et_post_title) //글제목
-    var author=findViewById<TextView>(R.id.et_post_writer) //글쓴이
-    var price=findViewById<TextView>(R.id.et_price) //공구가격
-    var period=findViewById<TextView>(R.id.et_datess) //공구 날짜
-    var link=findViewById<TextView>(R.id.et_product_link) //공구링크
-    var contact=findViewById<TextView>(R.id.et_messanger_link) //오픈채팅 링크
-    var description=findViewById<TextView>(R.id.et_content) //글내용
+//    var title=findViewById<TextView>(R.id.et_post_title) //글제목
+//    var author=findViewById<TextView>(R.id.et_post_writer) //글쓴이
+//    var price=findViewById<TextView>(R.id.et_price) //공구가격
+//    var period=findViewById<TextView>(R.id.et_datess) //공구 날짜
+//    var link=findViewById<TextView>(R.id.et_product_link) //공구링크
+//    var contact=findViewById<TextView>(R.id.et_messanger_link) //오픈채팅 링크
+//    var description=findViewById<TextView>(R.id.et_content) //글내용
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -55,13 +55,13 @@ class MyDetailPostView: AppCompatActivity() {
                 Log.d(TAG, "RetrofitManager - getTodo() - onResponse() called / response: $response")
 
                 //전달받은 position의 정보 받아서 연결
-                title.setText(Gson().toJson(response.body()?.get(id_extra)?.title).toString())
-                author.setText(Gson().toJson(response.body()?.get(id_extra)?.author).toString())
-                link.setText(Gson().toJson(response.body()?.get(id_extra)?.link).toString())
-                price.setText(Gson().toJson(response.body()?.get(id_extra)?.price).toString())
-                period.setText(Gson().toJson(response.body()?.get(id_extra)?.date).toString())
-                contact.setText(Gson().toJson(response.body()?.get(id_extra)?.contact).toString())
-                description.setText(Gson().toJson(response.body()?.get(id_extra)?.description).toString())
+//                title.setText(Gson().toJson(response.body()?.get(id_extra)?.title).toString())
+//                author.setText(Gson().toJson(response.body()?.get(id_extra)?.author).toString())
+//                link.setText(Gson().toJson(response.body()?.get(id_extra)?.link).toString())
+//                price.setText(Gson().toJson(response.body()?.get(id_extra)?.price).toString())
+//                period.setText(Gson().toJson(response.body()?.get(id_extra)?.date).toString())
+//                contact.setText(Gson().toJson(response.body()?.get(id_extra)?.contact).toString())
+//                description.setText(Gson().toJson(response.body()?.get(id_extra)?.description).toString())
 
             }
 
@@ -69,6 +69,11 @@ class MyDetailPostView: AppCompatActivity() {
                 Log.d(TAG, "RetrofitManager - getTodo() - onFailure() called / t: ${t}")
             }
         })
+
+        //뒤로가기 버튼 눌렀을 때
+        binding.ivBackBtn.setOnClickListener {
+            finish()
+        }
 
         var modified_btn=findViewById<AppCompatButton>(R.id.modified_btn)
         var deleted_btn=findViewById<AppCompatButton>(R.id.del_btn)
