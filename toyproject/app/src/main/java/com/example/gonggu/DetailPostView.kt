@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.gonggu.databinding.FragmentDetailPostViewBinding
+import com.example.gonggu.databinding.FragmentMySelfPostViewBinding
 import com.example.gonggu.model.readAllDTO
 import com.example.gonggu.model.readDTO
 import com.example.gonggu.retrofit.IRetrofit
@@ -17,12 +19,23 @@ class DetailPostView : AppCompatActivity() {
     private val httpCall : IRetrofit? = RetrofitClient.getClient(API.BASE_URL)?.create(IRetrofit::class.java)
     val TAG : String = "로그"
 
+    private var mBinding: FragmentDetailPostViewBinding? = null
+    private val binding get() = mBinding!!
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
+        mBinding = FragmentDetailPostViewBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         intent = getIntent();// 인텐트 받아오기
         var id_extra = intent.getIntExtra("id_extra",10); //Adapter에서 받은 키값 연결
+
+        // 뒤로가기 버튼
+        binding.ivBackBtn2.setOnClickListener {
+            finish()
+        }
 
         //세부 글 읽기
         var call = httpCall?.readAll()

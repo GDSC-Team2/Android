@@ -46,8 +46,6 @@ class LoginActivity : AppCompatActivity() {
 
         binding.loginBtn.setOnClickListener {
             googleLogin()
-            startActivity(Intent(this@LoginActivity, MainActivity::class.java))
-            finish()
         }
     }
 
@@ -88,6 +86,9 @@ class LoginActivity : AppCompatActivity() {
                 intent.putExtra("emailKey", email)
                 intent.putExtra("nameKey", displayName)
                 intent.putExtra("photoKey", photo)
+                startActivity(intent)
+                finish()
+
             }
 
         } catch (e: ApiException) {

@@ -84,7 +84,6 @@ class FavoriteFragment: Fragment() {
  */
                 mBinding!!.rvLeadingItems.layoutManager= LinearLayoutManager(activity)
                 mBinding!!.rvLeadingItems.setHasFixedSize(true)
-
                 mBinding!!.rvLeadingItems.adapter= MyItemAdapter(MainItemList)
             }
 
@@ -97,7 +96,6 @@ class FavoriteFragment: Fragment() {
 
         mBinding!!.rvLeadingItems.layoutManager= LinearLayoutManager(activity)
         mBinding!!.rvLeadingItems.setHasFixedSize(true)
-
         mBinding!!.rvLeadingItems.adapter= MyItemAdapter(MainItemList)
         return binding.root
     }
