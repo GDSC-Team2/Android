@@ -39,11 +39,11 @@ class FavoriteFragment: Fragment() {
         mBinding= ActivityFavoriteBinding.inflate(inflater, container, false)
 
 
-        //test recycler view
-
+        //login author
+        var myname=arguments?.getString("author").toString()
 
         //내가 쓴 전체 글 읽기
-        var call = httpCall?.MyWriting()
+        var call = httpCall?.MyWriting(myname)
         call?.enqueue(object : retrofit2.Callback<List<MyWritingDTO>>{
             override fun onResponse(call: Call<List<MyWritingDTO>>, response: Response<List<MyWritingDTO>>) {
 

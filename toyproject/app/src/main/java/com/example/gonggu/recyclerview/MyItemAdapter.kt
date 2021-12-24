@@ -34,7 +34,8 @@ class MyItemAdapter(val MainItemList:ArrayList<MainItem>) : RecyclerView.Adapter
 
         //해당 recyclerview 클릭시 activity 화면 이동
         holder.itemView.setOnClickListener {
-            val intent= Intent(holder.itemView?.context, DetailPostView::class.java).putExtra("id_extra",position)
+            var intent= Intent(holder.itemView?.context, DetailPostView::class.java)
+            intent.putExtra("id_extra",position)
             ContextCompat.startActivity(holder.itemView.context,intent,null)
         }
     }
