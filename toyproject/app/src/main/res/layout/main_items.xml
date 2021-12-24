@@ -4,10 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="10dp"
-    android:layout_marginEnd="10dp"
     android:layout_marginBottom="16dp"
-    android:background="@drawable/borderline">
+    android:background="@drawable/post_rounded_gray">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
