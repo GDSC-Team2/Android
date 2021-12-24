@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.gonggu.DetailPostView
+import com.example.gonggu.MyDetailPostView
 import com.example.gonggu.R
 
 class MyItemAdapter(val MainItemList:ArrayList<MainItem>) : RecyclerView.Adapter<MyItemAdapter.CustomViewHolder>(){
@@ -34,7 +35,8 @@ class MyItemAdapter(val MainItemList:ArrayList<MainItem>) : RecyclerView.Adapter
 
         //해당 recyclerview 클릭시 activity 화면 이동
         holder.itemView.setOnClickListener {
-            var intent= Intent(holder.itemView?.context, DetailPostView::class.java)
+            var intent= Intent(holder.itemView?.context, MyDetailPostView::class.java)
+            intent.putExtra("author",MainItemList.get(position).author)
             intent.putExtra("id_extra",position)
             ContextCompat.startActivity(holder.itemView.context,intent,null)
         }
