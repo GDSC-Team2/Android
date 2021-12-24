@@ -7,6 +7,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
+import com.example.gonggu.databinding.ActivityLoginBinding
+import com.example.gonggu.databinding.FragmentMySelfPostViewBinding
+import com.example.gonggu.databinding.FragmentMypageBinding
 import com.example.gonggu.model.MyWritingDTO
 import com.example.gonggu.model.readAllDTO
 import com.example.gonggu.model.readDTO
@@ -22,6 +25,10 @@ class MyDetailPostView: AppCompatActivity() {
     private val httpCall : IRetrofit? = RetrofitClient.getClient(API.BASE_URL)?.create(IRetrofit::class.java)
     val TAG : String = "로그"
 
+    //뷰 바인딩 사용
+    private var mBinding: FragmentMySelfPostViewBinding? = null
+    private val binding get() = mBinding!!
+
     //id값 매칭
     var title=findViewById<TextView>(R.id.et_post_title) //글제목
     var author=findViewById<TextView>(R.id.et_post_writer) //글쓴이
@@ -34,7 +41,8 @@ class MyDetailPostView: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_my_self_post_view)
+        mBinding = FragmentMySelfPostViewBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         intent = getIntent();// 인텐트 받아오기
         var authors = intent.getStringExtra("author").toString(); //Adapter에서 받은 키값 연결

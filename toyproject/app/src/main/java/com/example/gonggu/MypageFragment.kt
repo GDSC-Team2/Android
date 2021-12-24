@@ -26,6 +26,7 @@ import kotlinx.android.synthetic.main.fragment_mypage.*
 import java.net.URL
 
 class MypageFragment : Fragment() {
+
     //뷰 바인딩 사용
     private var mBinding: FragmentMypageBinding? = null
     private val binding get() = mBinding!!

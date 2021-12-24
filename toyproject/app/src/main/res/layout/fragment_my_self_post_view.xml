@@ -49,10 +49,11 @@
 
     <EditText
         android:id="@+id/et_post_title"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
         android:text="눈송패딩 공구하러 오송"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -137,8 +138,9 @@
                 android:layout_width="1dp"
                 android:layout_height="14dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="3dp"
+
                 android:layout_marginRight="8dp"
+                android:layout_gravity="center"
                 android:background="@color/darkblue" />
 
             <EditText
@@ -182,7 +184,7 @@
                 android:layout_width="1dp"
                 android:layout_height="14dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
                 android:layout_marginRight="8dp"
                 android:background="@color/darkblue" />
 
@@ -221,7 +223,7 @@
                 android:layout_width="1dp"
                 android:layout_height="14dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
                 android:layout_marginRight="8dp"
                 android:background="@color/darkblue" />
 
@@ -260,7 +262,7 @@
                 android:layout_width="1dp"
                 android:layout_height="14dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
                 android:layout_marginRight="8dp"
                 android:background="@color/darkblue" />
 
@@ -275,7 +277,7 @@
         </LinearLayout>
 
         <View
-            android:layout_width="317dp"
+            android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="18dp"
             android:layout_marginBottom="18dp"
@@ -287,6 +289,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:lineHeight="21sp"
+            android:textSize="15sp"
+            android:background="#00000000"
             android:text="눈송패딩 공구를 시작합니다!\n자세한 내용은 오픈채팅에서 진행하도록 할게요~\n참여버튼 눌러주시면 감사하겠습니다 :D"
             android:textColor="@color/black" />
     </LinearLayout>
